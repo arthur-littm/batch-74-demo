@@ -10,13 +10,7 @@
   <%= @article.body %>
 </p>
 
-<%= content_for(:after_js) do %>
-<script>
-  $(document).ready(function(){
-    alert("<%= @article.title %> is online")
-  })
-</script>
-<% end %>
+
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
